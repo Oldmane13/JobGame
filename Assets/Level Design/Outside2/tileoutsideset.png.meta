@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 08a714d1f2940714388e6f8f663314a1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tileoutsideset_0
+    21300002: tileoutsideset_1
+    21300004: tileoutsideset_2
+    21300006: tileoutsideset_3
+    21300008: tileoutsideset_4
+    21300010: tileoutsideset_5
+    21300012: tileoutsideset_6
+    21300014: tileoutsideset_7
+    21300016: tileoutsideset_8
+    21300018: tileoutsideset_9
+    21300020: tileoutsideset_10
+    21300022: tileoutsideset_11
+    21300024: tileoutsideset_12
+    21300026: tileoutsideset_13
+    21300028: tileoutsideset_14
+    21300030: tileoutsideset_15
+    21300032: tileoutsideset_16
+    21300034: tileoutsideset_17
+    21300036: tileoutsideset_18
+    21300038: tileoutsideset_19
+    21300040: tileoutsideset_20
+    21300042: tileoutsideset_21
+    21300044: tileoutsideset_22
+    21300046: tileoutsideset_23
+    21300048: tileoutsideset_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tileoutsideset_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_4
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_7
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 324
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_10
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_11
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_12
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_13
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_14
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_15
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 219
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_19
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_20
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_21
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 114
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tileoutsideset_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

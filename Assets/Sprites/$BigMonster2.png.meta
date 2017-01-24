@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 541740c785b31904aa9dfb78d2dae03c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: $BigMonster2_0
+    21300002: $BigMonster2_1
+    21300004: $BigMonster2_2
+    21300006: $BigMonster2_3
+    21300008: $BigMonster2_4
+    21300010: $BigMonster2_5
+    21300012: $BigMonster2_6
+    21300014: $BigMonster2_7
+    21300016: $BigMonster2_8
+    21300018: $BigMonster2_9
+    21300020: $BigMonster2_10
+    21300022: $BigMonster2_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: $BigMonster2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 79
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 160
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 80
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 80
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: $BigMonster2_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
