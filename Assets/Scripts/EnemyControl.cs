@@ -21,7 +21,7 @@ public class EnemyControl : MonoBehaviour {
 	{
 		GameObject go = GameObject.FindGameObjectWithTag("Player");		
 		target = go.transform;
-		maxdistance = 0;
+		maxdistance = 2;
 	}
 	
 	void Update ()
