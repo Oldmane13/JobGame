@@ -2,17 +2,15 @@
 using System.Collections;
 
 public class PlayerDeath : MonoBehaviour {
+	
 	public GameObject Respawn;
 	GameObject player;
 	public GameObject deathParticle;
 	public CharController Character;
-	private float gravityStore;
-	GameObject thePlayer = GameObject.Find("Character");
 	
 	void Start(){
 		GameObject player = GameObject.Find("Character");
-		GameObject thePlayer = GameObject.Find("Character");
-		CharController CharController = thePlayer.GetComponent<CharController>();
+
 		
 	}
 	// Use this for initialization

@@ -9,33 +9,44 @@ public class Coffee : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		note.SetActive(false);
+		panel.SetActive(false);
 		GameObject player = GameObject.Find("Character");
 		CharController CharController = player.GetComponent<CharController>();
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	
+	void Smth(){
+		
+		StartCoroutine("Congrats");
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
 		GameObject player = GameObject.Find("Character");
 		CharController CharController = player.GetComponent<CharController>();
 		if (other.gameObject.tag == "Player"){
-			note.SetActive(true);
-			panel.SetActive(true);	
-		if (Input.GetKey(KeyCode.Return)){
-				note.SetActive(false);
-				panel.SetActive(false);	
-		}
-		
+			gameObject.renderer.enabled = false;
+			Smth();
+			audio.Play();	
 		}
 	
+		
 	}
 	
-	//IEnumerator Congrats(){
 	
-	//}
+	
+	IEnumerator Congrats(){
+		
+		note.SetActive(true);
+		panel.SetActive(true);
+		
+		yield return new WaitForSeconds(5f);
+
+		note.SetActive(false);
+		panel.SetActive(false);	
+		Destroy(gameObject);
+		Application.LoadLevel("mainmenu");
+	}
+	
 }
+	
