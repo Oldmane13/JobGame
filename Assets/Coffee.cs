@@ -45,7 +45,7 @@ public class Coffee : MonoBehaviour {
 		note.SetActive(false);
 		panel.SetActive(false);	
 		Destroy(gameObject);
-		Application.LoadLevel("mainmenu");
+		Application.LoadLevel("LoadingScreen2");
 	}
 	
 }
