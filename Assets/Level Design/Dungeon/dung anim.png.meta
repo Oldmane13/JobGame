@@ -295,13 +295,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dung anim_21
+    - name: 
       rect:
         serializedVersion: 2
         x: 15
-        y: 95
+        y: 96
         width: 81
-        height: 97
+        height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dung anim_33
+    - name: 
       rect:
         serializedVersion: 2
-        x: 575
+        x: 576
         y: 480
         width: 96
         height: 96
@@ -445,16 +445,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dung anim_35
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 449
-        width: 56
-        height: 9
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: dung anim_36
       rect:
         serializedVersion: 2
@@ -465,20 +455,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dung anim_37
-      rect:
-        serializedVersion: 2
-        x: 383
-        y: 447
-        width: 109
-        height: 6
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: dung anim_38
       rect:
         serializedVersion: 2
-        x: 671
+        x: 672
         y: 480
         width: 96
         height: 96
@@ -488,14 +468,14 @@ TextureImporter:
     - name: dung anim_39
       rect:
         serializedVersion: 2
-        x: 767
+        x: 768
         y: 480
         width: 96
         height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dung anim_40
+    - name: 
       rect:
         serializedVersion: 2
         x: 864

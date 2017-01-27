@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PlayerDeath : MonoBehaviour {
 	
 	public GameObject Respawn;
@@ -25,6 +26,7 @@ public class PlayerDeath : MonoBehaviour {
 		if (other.gameObject.tag == "Player"){ // check if it's the player, if you want
 			audio.Play ();
 			RespawnPlayer();
+
 			
 			
 		}
@@ -45,6 +47,7 @@ public class PlayerDeath : MonoBehaviour {
 		CharController.enabled = true;
 		CharController.renderer.enabled = true;
 		player.transform.position = Respawn.transform.position;
+		Application.LoadLevel(Application.loadedLevel);
 		
 		
 	}
