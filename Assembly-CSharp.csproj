@@ -58,11 +58,13 @@
      <Compile Include="Assets\Scripts\ItemUpDown.cs" />
      <Compile Include="Assets\Scripts\Load.cs" />
      <Compile Include="Assets\Scripts\Load1.cs" />
+     <Compile Include="Assets\Scripts\Load2.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Pizza.cs" />
      <Compile Include="Assets\Scripts\PlayerDeath.cs" />
+     <Compile Include="Assets\Scripts\TeleportToLevel.cs" />
      <Compile Include="Assets\Scripts\UpDown.cs" />
-     <Compile Include="Assets\Scripts\WallBounce.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>S:/unity4/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
