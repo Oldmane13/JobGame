@@ -30,10 +30,6 @@ public class PauseMenu : MonoBehaviour {
 		audio.Play ();
 	}
 	
-	public void Reload(){
-		Application.LoadLevel(Application.loadedLevel);
-	}
-	
 	public void Quit(){
 		Application.Quit();	
 	}
