@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Pizza.cs" />
      <Compile Include="Assets\Scripts\PlayerDeath.cs" />
+     <Compile Include="Assets\Scripts\SpringJump.cs" />
      <Compile Include="Assets\Scripts\TeleportToLevel.cs" />
      <Compile Include="Assets\Scripts\UpDown.cs" />
  <Reference Include="UnityEngine.UI">
