@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Checkpoint.cs" />
+     <Compile Include="Assets\MobText.cs" />
      <Compile Include="Assets\Scripts\Boundries.cs" />
      <Compile Include="Assets\Scripts\CharController.cs" />
      <Compile Include="Assets\Scripts\Coffee.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scripts\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\SpringJump.cs" />
      <Compile Include="Assets\Scripts\TeleportToLevel.cs" />
+     <Compile Include="Assets\Scripts\TrapChest.cs" />
      <Compile Include="Assets\Scripts\UpDown.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>S:/unity4/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>

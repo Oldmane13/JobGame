@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpringJump.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerDeath.cs">
     <Files>
-      <File FileName="Assets\Scripts\SpringJump.cs" Line="17" Column="2" />
+      <File FileName="Assets\MobText.cs" Line="38" Column="27" />
+      <File FileName="Assets\Scripts\SpringJump.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Boundries.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DestroyOnTrigger.cs" Line="24" Column="103" />
-      <File FileName="Assets\Scripts\PlayerDeath.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestroyOnTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerDeath.cs" Line="46" Column="5" />
       <File FileName="Assets\Scripts\EnemyControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemySpawn.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Dialogue.cs" Line="1" Column="1" />
@@ -15,11 +16,7 @@
       <File FileName="Assets\Scripts\Load.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Load1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CharController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pizza.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Coffee.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TeleportToLevel.cs" Line="6" Column="1" />
-      <File FileName="Assets\Scripts\Load2.cs" Line="13" Column="39" />
+      <File FileName="Assets\Scripts\TrapChest.cs" Line="65" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
