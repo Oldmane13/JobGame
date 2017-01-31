@@ -11,8 +11,7 @@ public class Coffee : MonoBehaviour {
 	void Start () {
 		note.SetActive(false);
 		panel.SetActive(false);
-		GameObject player = GameObject.Find("Character");
-		CharController CharController = player.GetComponent<CharController>();
+		
 	
 	}
 	
@@ -22,8 +21,7 @@ public class Coffee : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
-		GameObject player = GameObject.Find("Character");
-		CharController CharController = player.GetComponent<CharController>();
+
 		if (other.gameObject.tag == "Player"){
 			gameObject.renderer.enabled = false;
 			Smth();

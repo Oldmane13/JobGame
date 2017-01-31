@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Checkpoint.cs" />
-     <Compile Include="Assets\MobText.cs" />
+     <Compile Include="Assets\Door.cs" />
+     <Compile Include="Assets\Key.cs" />
      <Compile Include="Assets\Scripts\Boundries.cs" />
      <Compile Include="Assets\Scripts\CharController.cs" />
      <Compile Include="Assets\Scripts\Coffee.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\Scripts\Load1.cs" />
      <Compile Include="Assets\Scripts\Load2.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MobText.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Pizza.cs" />
      <Compile Include="Assets\Scripts\PlayerDeath.cs" />

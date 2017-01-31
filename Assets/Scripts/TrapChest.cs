@@ -5,7 +5,6 @@ public class TrapChest : MonoBehaviour {
 
 	public GameObject textTrap;
 	public GameObject panelTrap;
-	public GameObject initialText;
 	public GameObject trampSpawn;
 	public GameObject enemy1;
 	public GameObject enemy2;
@@ -20,7 +19,6 @@ public class TrapChest : MonoBehaviour {
 	
 	void Start(){
 		GameObject player = GameObject.Find("Character");
-		initialText.SetActive(false);
 		panelTrap.SetActive(false);
 		textTrap.SetActive(false);
 	}
@@ -29,7 +27,6 @@ public class TrapChest : MonoBehaviour {
 		
 		if (other.gameObject.tag == "Player"){
 			inTrigger = true;
-			initialText.SetActive(true);
 		}
 	}
 	
@@ -41,9 +38,8 @@ public class TrapChest : MonoBehaviour {
 				
 				GameObject player = GameObject.Find("Character");
 				CharController CharController = player.GetComponent<CharController>();
-				
+				audio.Play();
 				chestOpened = true;
-				initialText.SetActive(false);
 				textTrap.SetActive(true);
 				panelTrap.SetActive(true);
 				CharController.enabled = false;
@@ -65,6 +61,13 @@ public class TrapChest : MonoBehaviour {
 					Destroy(this.gameObject);
 				}
 			}
+		}
+	}
+	void OnGUI()
+	{
+		if (inTrigger)
+		{
+			GUI.Box(new Rect(0, 60, 200, 25), "Press E to open chest");
 		}
 	}
 }
