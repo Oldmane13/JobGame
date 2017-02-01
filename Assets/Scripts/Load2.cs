@@ -10,6 +10,6 @@ public class Load2 : MonoBehaviour {
 	IEnumerator LoadingScreen() {
 		print(Time.time);
 		yield return new WaitForSeconds(3);
-		Application.LoadLevel("SlaveLevel");
+		Application.LoadLevel("Level3");
 	}
 }
