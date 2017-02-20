@@ -10,6 +10,7 @@ public class EnemyControl : MonoBehaviour {
 	public int maxdistance;
 	private Transform myTransform;
 	bool facingRight = true;
+	public EnemyControl mob;
 	
 	
 	void Awake()
@@ -24,11 +25,15 @@ public class EnemyControl : MonoBehaviour {
 		GameObject go = GameObject.FindGameObjectWithTag("Player");		
 		target = go.transform;
 		maxdistance = 0;
+		mob = FindObjectOfType<EnemyControl>();
+		
 	}
 	
 	void Update ()
 	{
-		float move = Input.GetAxis ("Horizontal");
+		float move =Input.GetAxis ("Horizontal");
+		
+		//anim.SetFloat("eSpeed", Mathf.Abs(move));
 		
 		if (Vector3.Distance(target.position, myTransform.position) > maxdistance)
 		{
@@ -38,10 +43,4 @@ public class EnemyControl : MonoBehaviour {
 			
 		}
 	}
-	void Flip(){		
-		facingRight = !facingRight;
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
-		}
 }

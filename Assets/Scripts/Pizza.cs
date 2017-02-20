@@ -3,49 +3,52 @@ using System.Collections;
 
 public class Pizza : MonoBehaviour {
 
-	GameObject player;
+	private CharController player;
 	public GameObject note;
 	public GameObject panel;
 	public float waitTime;
+	private bool inTrigger;
 	
 	// Use this for initialization
 	void Start () {
 		note.SetActive(false);
 		panel.SetActive(false);
-		GameObject player = GameObject.Find("Character");
-		CharController CharController = player.GetComponent<CharController>();
+		player = FindObjectOfType<CharController>();
 		
+	}
+	
+	void Update () {
+		if (inTrigger)
+		{
+			CatchPizza ();
+			if (Input.GetKeyDown(KeyCode.Space)){				
+				player.enabled = true;
+				note.SetActive(false);
+				panel.SetActive(false);	
+				Destroy(gameObject);
+			}
+		}
 	}
 	
 	void CatchPizza(){
-		
-		StartCoroutine("End");
-	}
-	
-	void OnTriggerEnter2D(Collider2D other){
-		GameObject player = GameObject.Find("Character");
-		CharController CharController = player.GetComponent<CharController>();
-		if (other.gameObject.tag == "Player"){
-			gameObject.renderer.enabled = false;
-			CatchPizza();
-			audio.Play();	
-		}
-		
-		
-	}
-	
-	
-	
-	IEnumerator End(){
+
 		
 		note.SetActive(true);
 		panel.SetActive(true);
+	}
+	
+	void OnTriggerEnter2D(Collider2D other){
 		
-		yield return new WaitForSeconds(waitTime);
+		if (other.gameObject.tag == "Player"){
+			inTrigger = true;
+			audio.Play();
+			gameObject.renderer.enabled = false;
+			player.enabled = false;
+			CatchPizza();
+				
+		}
 		
-		note.SetActive(false);
-		panel.SetActive(false);	
-		Destroy(gameObject);
+		
 	}
 	
 }

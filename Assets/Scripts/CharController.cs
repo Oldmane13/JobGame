@@ -15,6 +15,9 @@ public class CharController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700;
 	
+	public Transform firePoint;
+	public GameObject projectile;
+	
 	void Start () {
 		anim = GetComponent<Animator>();
 	}
@@ -45,6 +48,10 @@ public class CharController : MonoBehaviour {
 			audio.Play ();
 			anim.SetBool("Ground", false);
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
+		}
+		if (Input.GetKeyDown(KeyCode.Q)){
+			
+			Instantiate(projectile, firePoint.position, firePoint.rotation);
 		}
 		
 	}

@@ -8,10 +8,11 @@ public class PlayerDeath : MonoBehaviour {
 	GameObject player;
 	public GameObject deathParticle;
 	public CharController Character;
+	EnemyControl mob;
 	
 	void Start(){
 		GameObject player = GameObject.Find("Character");
-
+		mob = FindObjectOfType<EnemyControl>();
 		
 	}
 	// Use this for initialization
@@ -24,9 +25,10 @@ public class PlayerDeath : MonoBehaviour {
 		
 		
 		if (other.gameObject.tag == "Player"){ // check if it's the player, if you want
+			//mob.enabled = false;
 			audio.Play ();
 			RespawnPlayer();
-
+			
 			
 			
 		}

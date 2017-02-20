@@ -9,11 +9,10 @@ public class MobText : MonoBehaviour {
 	private bool inTrigger;
 	private CharController Character;
 	public Transform spawnPoint;
-	GameObject player = GameObject.Find("Character");
 
 	
 	void Start(){
-		GameObject player = GameObject.Find("Character");
+		Character = FindObjectOfType<CharController>();
 		panel.SetActive(false);
 		text.SetActive(false);
 	}
@@ -24,9 +23,7 @@ public class MobText : MonoBehaviour {
 			inTrigger = true;
 			text.SetActive(true);
 			panel.SetActive(true);
-			GameObject player = GameObject.Find("Character");
-			CharController CharController = player.GetComponent<CharController>();
-			CharController.enabled = false;		
+			Character.enabled = false;	
 			}
 		}
 	
@@ -36,9 +33,7 @@ public class MobText : MonoBehaviour {
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				GameObject player = GameObject.Find("Character");
-				CharController CharController = player.GetComponent<CharController>();
-				CharController.enabled = true;
+				Character.enabled = true;
 				text.SetActive(false);
 				panel.SetActive(false);
 				Instantiate (trampSpawn, spawnPoint.position, spawnPoint.rotation);
