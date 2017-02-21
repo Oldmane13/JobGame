@@ -6,7 +6,7 @@ public class MobText : MonoBehaviour {
 	public GameObject text;
 	public GameObject panel;
 	public GameObject trampSpawn;
-	private bool inTrigger;
+	public static bool inTrigger;
 	private CharController Character;
 	public Transform spawnPoint;
 
@@ -20,7 +20,7 @@ public class MobText : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 
 		if (other.gameObject.tag == "Player"){
-			inTrigger = true;
+			//inTrigger = true;
 			text.SetActive(true);
 			panel.SetActive(true);
 			Character.enabled = false;	
@@ -31,14 +31,14 @@ public class MobText : MonoBehaviour {
 	void Update () {
 		if (inTrigger)
 		{
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
+			//if (Input.GetKeyDown(KeyCode.Space))
+			//{
 				Character.enabled = true;
 				text.SetActive(false);
 				panel.SetActive(false);
 				Instantiate (trampSpawn, spawnPoint.position, spawnPoint.rotation);
 				Destroy(this.gameObject);
-			}
+			//}
 		}
 	
 	}

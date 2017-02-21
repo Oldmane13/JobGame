@@ -1,17 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ProjectileController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Boundries.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerDeath.cs" Line="47" Column="41" />
-      <File FileName="Assets\Scripts\TrapChest.cs" Line="25" Column="35" />
-      <File FileName="Assets\Scripts\ProjectileController.cs" Line="30" Column="3" />
+      <File FileName="Assets\Scripts\FinalLoad.cs" Line="13" Column="32" />
+      <File FileName="Assets\Scripts\TrapChest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShootPlayerInRange.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerDeath.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProjectileController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Dialogue.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DestroyOnTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CharController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MobText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MobText.cs" Line="9" Column="15" />
       <File FileName="Assets\Scripts\Boundries.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpringJump.cs" Line="17" Column="28" />
+      <File FileName="Assets\Scripts\SpringJump.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Key.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Door.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Pizza.cs" Line="1" Column="1" />
+      <File FileName="Assets\Level Design\bosstrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MobDialog.cs" Line="150" Column="6" />
+      <File FileName="Assets\Scripts\BossDialog.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
