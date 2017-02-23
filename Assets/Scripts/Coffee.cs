@@ -3,35 +3,53 @@ using System.Collections;
 
 public class Coffee : MonoBehaviour {
 	
-	GameObject player;
+	private CharController player;
 	public GameObject note;
 	public GameObject panel;
+	private bool inTrigger;
 
 	// Use this for initialization
 	void Start () {
 		note.SetActive(false);
 		panel.SetActive(false);
-		
+		player = FindObjectOfType<CharController>();
 	
+	}
+	
+	void Update(){
+		if (inTrigger)
+		{
+			Smth ();
+			if (Input.GetKeyDown(KeyCode.Space)){				
+				player.enabled = true;
+				note.SetActive(false);
+				panel.SetActive(false);	
+				Destroy(gameObject);
+				Application.LoadLevel("LoadingScreen2");
+			}
+		}
 	}
 	
 	void Smth(){
 		
-		StartCoroutine("Congrats");
+		note.SetActive(true);
+		panel.SetActive(true);
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
 
 		if (other.gameObject.tag == "Player"){
+			inTrigger = true;
+			audio.Play();
 			gameObject.renderer.enabled = false;
-			Smth();
-			audio.Play();	
-		}
+			player.enabled = false;
+			Smth ();
 	
 		
 	}
+	}
 	
-	
+
 	
 	IEnumerator Congrats(){
 		

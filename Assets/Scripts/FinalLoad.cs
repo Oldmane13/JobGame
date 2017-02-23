@@ -10,6 +10,6 @@ public class FinalLoad : MonoBehaviour {
 	IEnumerator LoadingScreen() {
 		print(Time.time);
 		yield return new WaitForSeconds(3);
-		Application.LoadLevel("Level4");
+		Application.LoadLevel("BossFight");
 	}
 }

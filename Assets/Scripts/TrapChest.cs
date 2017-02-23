@@ -6,14 +6,10 @@ public class TrapChest : MonoBehaviour {
 	public GameObject textTrap;
 	public GameObject panelTrap;
 	public GameObject trampSpawn;
-	//public GameObject enemy1;
-	//public GameObject enemy2;
 	private bool inTrigger;
 	private bool chestOpened;
 	private CharController Character;
 	public Transform spawnPoint;
-	//public Transform enemySpawn1;
-	//public Transform enemySpawn2;
 	Animator anim;
 	public Transform target;
 
@@ -61,10 +57,7 @@ public class TrapChest : MonoBehaviour {
 					textTrap.SetActive(false);
 					panelTrap.SetActive(false);
 					Instantiate (trampSpawn, spawnPoint.position, spawnPoint.rotation);
-					//Instantiate (enemy1, enemySpawn1.position, enemySpawn1.rotation);
-					//Instantiate (enemy2, enemySpawn2.position, enemySpawn2.rotation);
-					//Character.enabled = true;
-					//Destroy(this.gameObject);
+
 					
 				}
 			}

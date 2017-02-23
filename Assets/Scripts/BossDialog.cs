@@ -21,6 +21,8 @@ public class BossDialog : MonoBehaviour
 	
 	public GameObject ContinueIcon;
 	public GameObject StopIcon;
+	public GameObject barrier;
+	public Transform barrierSpawn;
 	
 	// Use this for initialization
 	void Start ()
@@ -56,12 +58,14 @@ public class BossDialog : MonoBehaviour
 			if (!_isStringBeingRevealed)
 			{
 				_isStringBeingRevealed = true;
+				audio.Play();
 				StartCoroutine(DisplayString(DialogueStrings[currentDialogueIndex++]));
 				
 				if (currentDialogueIndex >= dialogueLength)
 				{
 					_isEndOfDialogue = true;
 					bosstrigger.inTrigger = true;
+					Instantiate(barrier, barrierSpawn.position, barrierSpawn.rotation);
 				}
 			}
 			
@@ -96,6 +100,7 @@ public class BossDialog : MonoBehaviour
 		{
 			_textComponent.text += stringToDisplay[currentCharacterIndex];
 			currentCharacterIndex++;
+		
 			
 			if (currentCharacterIndex < stringLength)
 			{
@@ -144,9 +149,10 @@ public class BossDialog : MonoBehaviour
 		{
 			StopIcon.SetActive(true);
 			bosstrigger.inTrigger = true;
+			Instantiate(barrier, barrierSpawn.position, barrierSpawn.rotation);
 			//Destroy(gameObject);			
 		}
-		
+		audio.Stop();
 		ContinueIcon.SetActive(true);
 	}
 }

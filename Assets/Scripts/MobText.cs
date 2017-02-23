@@ -9,9 +9,11 @@ public class MobText : MonoBehaviour {
 	public static bool inTrigger;
 	private CharController Character;
 	public Transform spawnPoint;
+	public Arrow arrow;
 
 	
 	void Start(){
+		arrow = FindObjectOfType<Arrow>();
 		Character = FindObjectOfType<CharController>();
 		panel.SetActive(false);
 		text.SetActive(false);
@@ -37,6 +39,7 @@ public class MobText : MonoBehaviour {
 				text.SetActive(false);
 				panel.SetActive(false);
 				Instantiate (trampSpawn, spawnPoint.position, spawnPoint.rotation);
+				Destroy (arrow.gameObject);
 				Destroy(this.gameObject);
 			//}
 		}

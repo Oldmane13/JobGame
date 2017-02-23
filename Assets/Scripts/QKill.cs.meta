@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 7f4db7bdbc69cb3498149b07fc4faa15
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - deathParticle: {instanceID: 0}
+  - Character: {instanceID: 0}
+  - bossTrig: {fileID: 136494, guid: 2eb186140e6fce148946333b8a8d6a0a, type: 2}
+  - bossTrigLocation: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

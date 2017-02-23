@@ -3,13 +3,13 @@ using System.Collections;
 
 public class EnemyControl : MonoBehaviour {
 	
-	Animator anim;
+	//Animator anim;
 	public Transform target;
 	public int moveSpeed;
 	public int rotationSpeed;
 	public int maxdistance;
 	private Transform myTransform;
-	bool facingRight = true;
+	//bool facingRight = true;
 	public EnemyControl mob;
 	
 	
@@ -21,7 +21,7 @@ public class EnemyControl : MonoBehaviour {
 	
 	void Start ()
 	{
-		anim = GetComponent<Animator>();
+		//anim = GetComponent<Animator>();
 		GameObject go = GameObject.FindGameObjectWithTag("Player");		
 		target = go.transform;
 		maxdistance = 0;
@@ -31,8 +31,7 @@ public class EnemyControl : MonoBehaviour {
 	
 	void Update ()
 	{
-		float move =Input.GetAxis ("Horizontal");
-		
+		//float move =Input.GetAxis ("Horizontal");	
 		//anim.SetFloat("eSpeed", Mathf.Abs(move));
 		
 		if (Vector3.Distance(target.position, myTransform.position) > maxdistance)

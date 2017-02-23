@@ -17,7 +17,7 @@ public class bosstrigger : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Player"){
-		
+			ShootPlayerInRange.anim.SetBool("Contact", true);
 			player.enabled = false;
 			boss.enabled = false;
 			text1.SetActive(true);
@@ -36,6 +36,7 @@ public class bosstrigger : MonoBehaviour {
 			boss.enabled = true;
 			text1.SetActive(false);
 			ShootPlayerInRange.contact = true;
+			
 			Destroy(gameObject);
 			
 			
