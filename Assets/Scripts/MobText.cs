@@ -25,7 +25,9 @@ public class MobText : MonoBehaviour {
 			//inTrigger = true;
 			text.SetActive(true);
 			panel.SetActive(true);
-			Character.enabled = false;	
+			Character.enabled = false;
+			CharController.anim.SetFloat("vSpeed",0f);
+			CharController.anim.SetFloat("Speed",0f);	
 			}
 		}
 	

@@ -7,7 +7,7 @@ public class CharController : MonoBehaviour {
 	bool facingRight = true;
 	bool contact;
 	
-	Animator anim;
+	public static Animator anim;
 	
 	bool grounded = false;
 	public Transform groundCheck;
@@ -17,9 +17,12 @@ public class CharController : MonoBehaviour {
 	
 	public Transform firePoint;
 	public GameObject projectile;
+	public GameObject PlayerDeatH;
+
 	
 	void Start () {
 		anim = GetComponent<Animator>();
+
 	}
 	
 	
@@ -55,6 +58,7 @@ public class CharController : MonoBehaviour {
 		}
 		
 	}
+	
 	
 	void Flip(){		
 		facingRight = !facingRight;

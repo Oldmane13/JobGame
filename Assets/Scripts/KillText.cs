@@ -16,18 +16,24 @@ public class KillText : MonoBehaviour {
 	{
 		
 		if(other.gameObject.tag == "Player"){
-			audio.Play ();	
-			//anim = GetComponent<Animator>();
-			//anim.SetBool ("dead", true);
-			
+			audio.Play ();		
 			myrigid = other.GetComponent<CharController>().rigidbody2D;
 			other.GetComponent<CharController>().rigidbody2D.velocity = new Vector2(myrigid.velocity.x,bounce);
-			
-			Instantiate(deathParticle, transform.position, transform.rotation);
-			Destroy(bullet.gameObject);
-			bullet.renderer.enabled = false;
-			Destroy(gameObject);
-			ShootPlayerInRange.i++;
+			StartCoroutine("WaitABit");
 		}		
+	}
+	
+	IEnumerator WaitABit(){
+		
+		Instantiate(deathParticle, transform.position, transform.rotation);
+		this.enabled = false;
+		bullet.enabled = false;
+		this.transform.parent.renderer.enabled = false;	
+		
+		yield return new WaitForSeconds(0.5f);
+		
+		Destroy(this.transform.parent.gameObject);
+		Destroy(gameObject);
+		
 	}
 }

@@ -4,9 +4,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - deathParticle: {instanceID: 0}
-  - Character: {instanceID: 0}
   - bossTrig: {fileID: 136494, guid: 2eb186140e6fce148946333b8a8d6a0a, type: 2}
-  - bossTrigLocation: {instanceID: 0}
+  - bossTrigLocation: {fileID: 421516, guid: 6af1e08dbb4659045872846534d3f2b4, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

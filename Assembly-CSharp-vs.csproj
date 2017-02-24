@@ -46,13 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Answer.cs" />
-     <Compile Include="Assets\Arrow.cs" />
-     <Compile Include="Assets\BossDialogue2.cs" />
      <Compile Include="Assets\Checkpoint.cs" />
-     <Compile Include="Assets\EndButton.cs" />
-     <Compile Include="Assets\Level Design\bosstrigger.cs" />
+     <Compile Include="Assets\Scripts\Answer.cs" />
+     <Compile Include="Assets\Scripts\Arrow.cs" />
      <Compile Include="Assets\Scripts\BossDialog.cs" />
+     <Compile Include="Assets\Scripts\BossDialogue2.cs" />
      <Compile Include="Assets\Scripts\Boundries.cs" />
      <Compile Include="Assets\Scripts\CharController.cs" />
      <Compile Include="Assets\Scripts\Coffee.cs" />
@@ -60,6 +58,7 @@
      <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\EndButton.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\EnemySpawn.cs" />
      <Compile Include="Assets\Scripts\FallDeath.cs" />
@@ -71,6 +70,7 @@
      <Compile Include="Assets\Scripts\Load1.cs" />
      <Compile Include="Assets\Scripts\Load2.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MobDeathAnimation.cs" />
      <Compile Include="Assets\Scripts\MobDialog.cs" />
      <Compile Include="Assets\Scripts\MobText.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
@@ -84,6 +84,7 @@
      <Compile Include="Assets\Scripts\ToBoss.cs" />
      <Compile Include="Assets\Scripts\TrapChest.cs" />
      <Compile Include="Assets\Scripts\UpDown.cs" />
+     <Compile Include="Assets\Scripts\bosstrigger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>S:/unity4/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>

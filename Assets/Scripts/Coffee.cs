@@ -43,6 +43,8 @@ public class Coffee : MonoBehaviour {
 			audio.Play();
 			gameObject.renderer.enabled = false;
 			player.enabled = false;
+			CharController.anim.SetFloat("vSpeed",0f);
+			CharController.anim.SetFloat("Speed",0f);
 			Smth ();
 	
 		

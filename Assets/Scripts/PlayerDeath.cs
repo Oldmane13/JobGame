@@ -8,6 +8,7 @@ public class PlayerDeath : MonoBehaviour {
 	CharController player;
 	public GameObject deathParticle;
 	EnemyControl mob;
+	public bool ded;
 	
 	void Start(){
 		player = FindObjectOfType<CharController>();
@@ -15,6 +16,11 @@ public class PlayerDeath : MonoBehaviour {
 		
 	}
 	// Use this for initialization
+	void Update(){
+	if (ded)
+		RespawnPlayer();
+	
+	}
 	
 	void RespawnPlayer(){
 		StartCoroutine("Reload");
@@ -23,8 +29,9 @@ public class PlayerDeath : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		
 		
-		if (other.gameObject.tag == "Player"){ // check if it's the player, if you want
+		if (other.gameObject.tag == "Player"){
 			mob.enabled = false;
+			//Application.LoadLevel(Application.loadedLevel);
 			audio.Play ();
 			RespawnPlayer();
 			
@@ -34,7 +41,6 @@ public class PlayerDeath : MonoBehaviour {
 	}
 	
 	IEnumerator Reload(){
-		
 		
 		player.renderer.enabled = false;
 		player.enabled = false;

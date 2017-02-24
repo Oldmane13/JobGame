@@ -3,15 +3,15 @@ using System.Collections;
 
 public class EnemyControl : MonoBehaviour {
 	
-	//Animator anim;
+
 	public Transform target;
 	public int moveSpeed;
 	public int rotationSpeed;
 	public int maxdistance;
 	private Transform myTransform;
 	//bool facingRight = true;
-	public EnemyControl mob;
-	
+	//public EnemyControl mob;
+	public static Animator anim;
 	
 	void Awake()
 	{
@@ -21,11 +21,11 @@ public class EnemyControl : MonoBehaviour {
 	
 	void Start ()
 	{
-		//anim = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
 		GameObject go = GameObject.FindGameObjectWithTag("Player");		
 		target = go.transform;
 		maxdistance = 0;
-		mob = FindObjectOfType<EnemyControl>();
+		//mob = FindObjectOfType<EnemyControl>();
 		
 	}
 	
@@ -34,6 +34,7 @@ public class EnemyControl : MonoBehaviour {
 		//float move =Input.GetAxis ("Horizontal");	
 		//anim.SetFloat("eSpeed", Mathf.Abs(move));
 		
+		
 		if (Vector3.Distance(target.position, myTransform.position) > maxdistance)
 		{
 			Vector3 dir = target.position - myTransform.position;
@@ -41,5 +42,6 @@ public class EnemyControl : MonoBehaviour {
 			myTransform.position += dir * moveSpeed * Time.deltaTime;
 			
 		}
+		
 	}
 }
