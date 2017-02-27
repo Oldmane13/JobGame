@@ -10,11 +10,12 @@ public class DestroyOnTrigger : MonoBehaviour
 	public Rigidbody2D myrigid;
 	public GameObject deathParticle;
 	public EnemyControl mob;
+	
 	// Use this for initialization
 	
 	void Start(){
 	mob = FindObjectOfType<EnemyControl>();
-	//anim = GetComponent<Animator>();
+
 	}
 	
 	

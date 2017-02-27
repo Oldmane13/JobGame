@@ -62,7 +62,6 @@ public class BossDialogue2 : MonoBehaviour {
 					if (currentDialogueIndex >= dialogueLength)
 					{
 						_isEndOfDialogue = true;
-						yield return new WaitForSeconds(2f);
 						Application.LoadLevel("End");
 
 					}

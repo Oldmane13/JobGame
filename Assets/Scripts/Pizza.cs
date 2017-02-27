@@ -8,12 +8,16 @@ public class Pizza : MonoBehaviour {
 	public GameObject panel;
 	public float waitTime;
 	private bool inTrigger;
+	public EnemyControl mob;
+	public GameObject wall;
+	public Transform wallPos;
 	
 	// Use this for initialization
 	void Start () {
 		note.SetActive(false);
 		panel.SetActive(false);
 		player = FindObjectOfType<CharController>();
+		mob = FindObjectOfType<EnemyControl>();
 		
 	}
 	
@@ -40,6 +44,8 @@ public class Pizza : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		
 		if (other.gameObject.tag == "Player"){
+			//mob.enabled = false;
+			Instantiate(wall, wallPos.position, wallPos.rotation);
 			inTrigger = true;
 			audio.Play();
 			gameObject.renderer.enabled = false;

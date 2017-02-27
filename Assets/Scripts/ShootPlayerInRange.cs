@@ -74,24 +74,31 @@ public class ShootPlayerInRange : MonoBehaviour {
 		}
 		if (i==1){
 			ProjectileController.anim.SetBool ("bullet1", true);
+			Answer.answerAnim.SetBool("answer1",true);
 		}
 		if (i==2){
 			ProjectileController.anim.SetBool ("bullet2", true);
+			Answer.answerAnim.SetBool("answer2",true);
 		}
 		if (i==3){
 			ProjectileController.anim.SetBool ("bullet3", true);
+			Answer.answerAnim.SetBool("answer3",true);
 		}
 		if (i==4){
 			ProjectileController.anim.SetBool ("bullet4", true);
+			Answer.answerAnim.SetBool("answer4",true);
 		}
 		if (i==5){
 			ProjectileController.anim.SetBool ("bullet5", true);
+			Answer.answerAnim.SetBool("answer1",true);
 		}
 		if (i==6){
 			ProjectileController.anim.SetBool ("bullet6", true);
+			Answer.answerAnim.SetBool("answer2",true);
 		}
 		if (i==7){
 			ProjectileController.anim.SetBool ("bullet7", true);
+			Answer.answerAnim.SetBool("answer3",true);
 		}
 
 		yield return null;

@@ -42,7 +42,7 @@ public class TrapChest : MonoBehaviour {
 				//transform.;
 				
 				anim.SetBool("Contact", true);
-				//audio.Play();
+				audio.Play();
 				chestOpened = true;
 				CharController.anim.SetFloat("vSpeed",0f);
 				CharController.anim.SetFloat("Speed",0f);
