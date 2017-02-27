@@ -8,7 +8,7 @@ public class PlayerDeath : MonoBehaviour {
 	CharController player;
 	public GameObject deathParticle;
 	EnemyControl mob;
-	public bool ded;
+
 	
 	void Start(){
 		player = FindObjectOfType<CharController>();
@@ -16,11 +16,6 @@ public class PlayerDeath : MonoBehaviour {
 		
 	}
 	// Use this for initialization
-	void Update(){
-	if (ded)
-		RespawnPlayer();
-	
-	}
 	
 	void RespawnPlayer(){
 		StartCoroutine("Reload");
@@ -30,6 +25,7 @@ public class PlayerDeath : MonoBehaviour {
 		
 		
 		if (other.gameObject.tag == "Player"){
+			this.enabled = false;
 			mob.enabled = false;
 			//Application.LoadLevel(Application.loadedLevel);
 			audio.Play ();

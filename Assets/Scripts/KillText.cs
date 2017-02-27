@@ -19,6 +19,7 @@ public class KillText : MonoBehaviour {
 			audio.Play ();		
 			myrigid = other.GetComponent<CharController>().rigidbody2D;
 			other.GetComponent<CharController>().rigidbody2D.velocity = new Vector2(myrigid.velocity.x,bounce);
+			ShootPlayerInRange.i++;
 			StartCoroutine("WaitABit");
 		}		
 	}

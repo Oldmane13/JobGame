@@ -23,6 +23,8 @@ public class BossDialog : MonoBehaviour
 	public GameObject StopIcon;
 	public GameObject barrier;
 	public Transform barrierSpawn;
+	public GameObject barrier2;
+	public Transform barrierSpawn2;
 	
 	// Use this for initialization
 	void Start ()
@@ -66,6 +68,7 @@ public class BossDialog : MonoBehaviour
 					_isEndOfDialogue = true;
 					bosstrigger.inTrigger = true;
 					Instantiate(barrier, barrierSpawn.position, barrierSpawn.rotation);
+					Instantiate(barrier2,barrierSpawn2.position,barrierSpawn2.rotation);
 				}
 			}
 			
@@ -150,6 +153,7 @@ public class BossDialog : MonoBehaviour
 			StopIcon.SetActive(true);
 			bosstrigger.inTrigger = true;
 			Instantiate(barrier, barrierSpawn.position, barrierSpawn.rotation);
+			Instantiate(barrier2,barrierSpawn2.position,barrierSpawn2.rotation);
 			//Destroy(gameObject);			
 		}
 		audio.Stop();

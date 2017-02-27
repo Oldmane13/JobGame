@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\DownDeathMob.cs" />
      <Compile Include="Assets\Scripts\EndButton.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\EnemySpawn.cs" />
@@ -79,6 +80,7 @@
      <Compile Include="Assets\Scripts\ProjectileController.cs" />
      <Compile Include="Assets\Scripts\QKill.cs" />
      <Compile Include="Assets\Scripts\ShootPlayerInRange.cs" />
+     <Compile Include="Assets\Scripts\SpecialMob.cs" />
      <Compile Include="Assets\Scripts\SpringJump.cs" />
      <Compile Include="Assets\Scripts\TeleportToLevel.cs" />
      <Compile Include="Assets\Scripts\ToBoss.cs" />

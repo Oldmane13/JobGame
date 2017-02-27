@@ -14,6 +14,7 @@ public class TrapChest : MonoBehaviour {
 	public Transform target;
 
 	public GameObject monster;
+
 	
 
 	
@@ -29,6 +30,7 @@ public class TrapChest : MonoBehaviour {
 		
 		if (other.gameObject.tag == "Player"){
 			inTrigger = true;
+
 		}
 	}
 	
@@ -37,6 +39,7 @@ public class TrapChest : MonoBehaviour {
 		if (inTrigger)
 		{
 			if (Input.GetKeyDown(KeyCode.E)){
+				//transform.;
 				
 				anim.SetBool("Contact", true);
 				//audio.Play();
@@ -48,14 +51,13 @@ public class TrapChest : MonoBehaviour {
 				Character.enabled = false;
 			}
 			if (chestOpened){
-				
+						
 				if (Input.GetKeyDown(KeyCode.Space))
 				{
 					Character.enabled = true;
 					inTrigger = false;
 					Instantiate (monster, transform.position, transform.rotation);
 					Destroy(gameObject);
-					
 					textTrap.SetActive(false);
 					panelTrap.SetActive(false);
 					Instantiate (trampSpawn, spawnPoint.position, spawnPoint.rotation);

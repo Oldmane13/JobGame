@@ -18,10 +18,12 @@ public class CharController : MonoBehaviour {
 	public Transform firePoint;
 	public GameObject projectile;
 	public GameObject PlayerDeatH;
+	public Rigidbody2D myrigid;
 
 	
 	void Start () {
 		anim = GetComponent<Animator>();
+		myrigid = GetComponent<CharController>().rigidbody2D;
 
 	}
 	

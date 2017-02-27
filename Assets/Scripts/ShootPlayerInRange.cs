@@ -11,6 +11,7 @@ public class ShootPlayerInRange : MonoBehaviour {
 	
 	public GameObject barrier;
 	public Transform barrierSpawn;
+
 	
 	public Transform shootArea;
 	public float waitBetweenShots;
@@ -51,6 +52,7 @@ public class ShootPlayerInRange : MonoBehaviour {
 		if(i==8){
 			StopCoroutine("bossact");
 			anim.SetBool("Fight",false);
+			CharController.anim.SetFloat("Speed",0f);
 			text2.SetActive(true);
 			//panel.SetActive(true);
 			contact = false;

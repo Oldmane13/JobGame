@@ -7,7 +7,7 @@ public class EndButton : MonoBehaviour {
 	public string quit;
 	
 	public void Reload(){
-		Application.LoadLevel("MainMenu");
+		Application.Quit ();
 	}
 	
 }

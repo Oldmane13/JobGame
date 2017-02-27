@@ -32,6 +32,16 @@ public class ProjectileController : MonoBehaviour {
 		//if(other.tag == "Player")
 			//Destroy (other.gameObject);
 		if(other.tag == "Barrier")	
-			Destroy(gameObject);
+			//Destroy(gameObject);
+			StartCoroutine("Wait");
+	}
+	
+	IEnumerator Wait(){
+	
+	this.enabled = false;
+	this.renderer.enabled = false;
+	yield return new WaitForSeconds(0.5f);
+	Destroy (gameObject);
+	
 	}
 }

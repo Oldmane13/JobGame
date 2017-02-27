@@ -21,9 +21,9 @@ public class DestroyOnTrigger : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" || other.gameObject.tag == "Finish"){
 			
-			audio.Play ();				
+			//audio.Play ();				
 			myrigid = other.GetComponent<CharController>().rigidbody2D;
 			other.GetComponent<CharController>().rigidbody2D.velocity = new Vector2(myrigid.velocity.x,bounce);
 			
@@ -37,7 +37,7 @@ public class DestroyOnTrigger : MonoBehaviour
 		
 		Instantiate(deathParticle, transform.position, transform.rotation);
 		this.enabled = false;
-		mob.enabled = false;
+		//mob.enabled = false;
 		this.transform.parent.renderer.enabled = false;
 		
 		//mob.renderer.enabled =false;
